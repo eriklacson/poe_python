@@ -3,7 +3,7 @@ import json
 import binascii
 from Savoir import Savoir
 
-person = {'name': 'Erik', 'lastname' : 'Lacson'}
+person = {"name": "Erik", "lastname" : "Lacson"}
 
 person_json = json.dumps(person)
 

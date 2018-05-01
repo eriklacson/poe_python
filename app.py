@@ -30,7 +30,7 @@ def get_info():
     return jsonify({'chain_info': chain_info})
 
 #get stream item
-@app.route('/api/1.0/item/')
+@app.route('/api/1.0/items')
 def get_items():
     chain_items = chain_api.liststreamitems(stream)
     return jsonify({'chain_items': chain_items})
@@ -38,7 +38,10 @@ def get_items():
 @app.route('/api/1.0/item/<string:key>')
 def get_key_item(key):
     key_item = chain_api.liststreamkeyitems(stream, key)
-    return jsonify({'key_item_data': key_item[0]['data']})
+    item_json = binascii.unhexlify(key_item[0]['data'])
+    item = json.loads(item_json)
+    
+    return jsonify({'item': item})
 
 #publish hash to the stream
 @app.route('/api/1.0/publish/<string:hash>', methods=['POST'])
