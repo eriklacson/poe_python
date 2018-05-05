@@ -2,8 +2,9 @@
 import sys
 import binascii
 import json
+from flask_bootstrap import Bootstrap
 from Savoir import Savoir
-from flask import Flask, jsonify, abort, make_response, request, url_for
+from flask import Flask, jsonify, abort, make_response, request, url_for, render_template
 
 #set multichain node account parameters
 rpcuser = 'multichainrpc'
@@ -14,6 +15,7 @@ stream = "poe"
 chainname = 'chain1'
 
 app = Flask(__name__)
+bootstrap = Bootstrap(app)
 
 #connect to multichain node
 chain_api = Savoir(rpcuser, rpcpasswd, rpchost, rpcport, chainname)
@@ -21,7 +23,9 @@ chain_api = Savoir(rpcuser, rpcpasswd, rpchost, rpcport, chainname)
 #home page
 @app.route('/')
 def index(): 
-    return "Hello, World!"
+    return render_template('index.html')
+
+
 
 #get stream info
 @app.route('/api/1.0/info')
