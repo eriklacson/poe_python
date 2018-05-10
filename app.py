@@ -25,6 +25,13 @@ chain_api = Savoir(rpcuser, rpcpasswd, rpchost, rpcport, chainname)
 def index(): 
     return render_template('index.html')
 
+@app.route('/asset/<string:key>')
+def asset(key): 
+    return render_template('asset.html', key=key)
+
+@app.route('/publish')
+def publish(): 
+    return render_template('publish.html')
 
 
 #get stream info

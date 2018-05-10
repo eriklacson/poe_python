@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main_container %}
+
+<h3>Singature: {{ key }}</h3>
+<table id="asset" class="table table-stripped">
+</table>
+
+
+<script type="text/javascript">
+  var key = "{{ key }}";
+</script>
+<script src="{{ url_for('static', filename='js/asset.js') }}"></script>
+{% endblock %}
+
