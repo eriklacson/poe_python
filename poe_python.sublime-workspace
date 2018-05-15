@@ -1,0 +1,585 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"fi",
+				"file"
+			],
+			[
+				"t",
+				"text"
+			],
+			[
+				"re",
+				"render_template"
+			],
+			[
+				"i",
+				"item"
+			],
+			[
+				"item",
+				"item_json"
+			],
+			[
+				"key",
+				"key_items"
+			],
+			[
+				"chain",
+				"chain_info"
+			],
+			[
+				"person",
+				"person_json"
+			],
+			[
+				"dat",
+				"data_string"
+			],
+			[
+				"PUL",
+				"publish"
+			],
+			[
+				"Sing",
+				"signature"
+			],
+			[
+				"sign",
+				"signature"
+			],
+			[
+				"JO",
+				"JSONobj"
+			],
+			[
+				"ht",
+				"httpServer"
+			],
+			[
+				"Web",
+				"webSocketServer"
+			],
+			[
+				"We",
+				"webSocketServer"
+			],
+			[
+				"b",
+				"bytes8"
+			],
+			[
+				"se",
+				"seconds"
+			],
+			[
+				"time",
+				"timeSinceLastBlock"
+			],
+			[
+				"bloc",
+				"block"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"ba",
+				"balanceOf"
+			],
+			[
+				"m",
+				"minimumAccountBalance"
+			],
+			[
+				"mimum",
+				"minimumAccountBalance"
+			],
+			[
+				"s",
+				"sender"
+			],
+			[
+				"a",
+				"amount"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"bu",
+				"buyPrice"
+			],
+			[
+				"new",
+				"newBuyPrice"
+			],
+			[
+				"ne",
+				"newSellPrice"
+			],
+			[
+				"un",
+				"unint256"
+			],
+			[
+				"o",
+				"overflows"
+			],
+			[
+				"fro",
+				"frozen"
+			],
+			[
+				"fr",
+				"from"
+			],
+			[
+				"add",
+				"address"
+			],
+			[
+				"ma",
+				"mapping"
+			],
+			[
+				"tra",
+				"transfer"
+			],
+			[
+				"bal",
+				"balanceOf"
+			],
+			[
+				"ad",
+				"admin"
+			],
+			[
+				"TOT",
+				"totalSupply"
+			],
+			[
+				"IN",
+				"initialSupply"
+			],
+			[
+				"DE",
+				"decimalUnits"
+			],
+			[
+				"TO",
+				"tokenSymbol"
+			],
+			[
+				"de",
+				"decimalUnits"
+			],
+			[
+				"To",
+				"tokenSymbol"
+			],
+			[
+				"to",
+				"tokenName"
+			],
+			[
+				"init",
+				"initialSupply"
+			],
+			[
+				"tras",
+				"transfered"
+			],
+			[
+				"tran",
+				"transaction"
+			],
+			[
+				"bla",
+				"balanceOf"
+			],
+			[
+				"all",
+				"allowance"
+			],
+			[
+				"h",
+				"head\tTag"
+			],
+			[
+				"e",
+				"elacson"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"pa",
+				"panel-default"
+			],
+			[
+				"for",
+				"form-group"
+			],
+			[
+				"play",
+				"play_button"
+			],
+			[
+				"row",
+				"row_number"
+			],
+			[
+				"contact",
+				"contact"
+			],
+			[
+				"fud",
+				"fund-contact"
+			],
+			[
+				"fund",
+				"fund-contact"
+			],
+			[
+				"con",
+				"contacts"
+			],
+			[
+				"pr",
+				"project"
+			],
+			[
+				"loan",
+				"loan-contractual"
+			],
+			[
+				"loa",
+				"loan-collaborative"
+			],
+			[
+				"cp",
+				"loan-collaborative-pointer"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"proj",
+				"project-data"
+			],
+			[
+				"ta",
+				"table-striped"
+			],
+			[
+				"tab",
+				"table"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 372.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Unmanaged Packages"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/media/erik/Data/Dropbox/Code/multichain/poe_python"
+	],
+	"file_history":
+	[
+		"/run/user/1000/gvfs/smb-share:server=192.168.0.116,share=share/motor_server/templates/index.html",
+		"/run/user/1000/gvfs/smb-share:server=192.168.0.116,share=share/motor_server/app.py",
+		"/home/erik/Desktop/test_file_reader/index.html",
+		"/home/erik/Desktop/index.html",
+		"/home/erik/Code/multichain/poe_python/static/js/scratch.js",
+		"/home/erik/Code/multichain/poe_python/templates/asset.html",
+		"/home/erik/Code/multichain/poe_python/templates/base.html",
+		"/home/erik/Code/multichain/poe_python/templates/publish.html",
+		"/home/erik/Code/multichain/poe_python/static/js/asset.js",
+		"/home/erik/Code/multichain/poe_python/app.py",
+		"/home/erik/Code/multichain/poe_python/static/js/publish.js",
+		"/home/erik/Code/multichain/poe_python/templates/index.html",
+		"/home/erik/Code/multichain/poe_python/static/js/apps.js",
+		"/home/erik/Code/multichain/poe_python/static/js/script.js",
+		"/home/erik/Code/multichain/poe_python/templates/script.js",
+		"/home/erik/Code/multichain/poe_python/template/index.html",
+		"/home/erik/Code/python/todo-api/app.py",
+		"/home/erik/Code/multichain/poe_python/test_stream.py",
+		"/home/erik/Code/multichain/poe_python/test_str_hex.py",
+		"/home/erik/Code/multichain/poe_python/test_rpc.py",
+		"/home/erik/Code/blockchain/pinoyakion/coin.solidity",
+		"/home/erik/Code/multichain/poe/public/index.php",
+		"/home/erik/Code/python/sockets/simplesocketserver.py",
+		"/home/erik/Code/IoT/videocontrol/nodejs/public/sketch.js",
+		"/home/erik/Code/IoT/3rd_edition/chapter5/WebSocketServer/server.js",
+		"/home/erik/Code/IoT/videocontrol/sketches/client/ config.h",
+		"/home/erik/Code/intelcrwd-et/modules/twitter_client.py",
+		"/home/erik/Code/intelcrwd-et/templates/base.html",
+		"/home/erik/Code/intelcrwd-et/templates/index.html",
+		"/home/erik/Code/intelcrwd-et/template-reference/index.html",
+		"/home/erik/Code/intelcrwd-et/template-reference/tables.html",
+		"/home/erik/Code/node/dateServer/start.py",
+		"/home/erik/Code/prc-monitoring/ta-detail.html",
+		"/home/erik/Desktop/asiacontentmarketing_2017-10-13_20-15-27.sql",
+		"/home/erik/Desktop/asiacontentmarketing_2017-10-13_20-15-27",
+		"/home/erik/Code/jfpr/pipeline-index.html",
+		"/home/erik/Code/oco-web/collab-loans-home.html",
+		"/home/erik/Code/IoT/arduino_serial_coms_python/serialEcho.py",
+		"/home/erik/Code/jfpr/other-cost-form.html",
+		"/home/erik/Code/jfpr/pipelline-detail.html",
+		"/home/erik/Code/jfpr/pipeline-detail.html",
+		"/home/erik/Code/jfpr/grants-review-mission-form.html",
+		"/home/erik/Code/jfpr/grants-subsequent-mission-form.html",
+		"/home/erik/Code/jfpr/grants-reports-performance-form.html",
+		"/home/erik/Code/jfpr/grant-issues-form.html",
+		"/home/erik/Code/jfpr/grant-issues-notes-form.html",
+		"/home/erik/Code/jfpr/grants-detail.html",
+		"/home/erik/Code/jfpr/seed-money-form.html",
+		"/home/erik/Code/jfpr/ta-issues-notes-form.html",
+		"/home/erik/Code/jfpr/ta-issues-form.html",
+		"/home/erik/Code/python/twitter_mining/streaming.py",
+		"/home/erik/Code/python/alien_invasion/.gitignore",
+		"/home/erik/Code/python/alien_invasion/aliens.py",
+		"/home/erik/Code/python/alien_invasion/settings.py",
+		"/home/erik/Code/oco-web/index.html",
+		"/home/erik/Code/python/alien_invasion/game_functions.py",
+		"/home/erik/Code/python/alien_invasion/alien_invasion.sublime-project",
+		"/home/erik/Code/html",
+		"/home/erik/Dropbox/Code/oco-web/trust-funds.html",
+		"/home/erik/Dropbox/Code/oco-web/.dropbox",
+		"/home/erik/Dropbox/Code/oco-web/dmc.html",
+		"/home/erik/Dropbox/Code/oco-web/.gitignore",
+		"/home/erik/Dropbox/Code/oco-web/afghanistan_dmc.html",
+		"/home/erik/Dropbox/Code/oco-web/partners_detail.html",
+		"/home/erik/Dropbox/Code/oco-web/cofinance-projects.html",
+		"/home/erik/Dropbox/Code/oco-web/css/readme.md",
+		"/home/erik/Dropbox/Code/oco-web/css/styles.css",
+		"/home/erik/Dropbox/Code/oco-web/trust-funds-home.html",
+		"/home/erik/Dropbox/Code/oco-web/cofinanced-projects-contrib-tabs.html",
+		"/home/erik/Dropbox/Code/oco-web/country.html",
+		"/home/erik/Dropbox/Code/oco-web/css/styles (MarcoPolo3's conflicted copy 2017-02-14).css",
+		"/home/erik/Dropbox/Code/oco-web/index.html",
+		"/home/erik/Dropbox/Code/oco-web/dmc_landing.html",
+		"/home/erik/Dropbox/Code/oco-web/partners.html",
+		"/home/erik/Dropbox/Code/oco-web/cofinance-projects-agreement.html",
+		"/home/erik/Dropbox/Code/oco-web/country_detail.html",
+		"/home/erik/Dropbox/Code/oco-web/cofinance-projects-home.html",
+		"/home/erik/Dropbox/Code/oco-web/.fuse_hidden0000dc0c00000002",
+		"/home/erik/Dropbox/Code/oco-web/test.html",
+		"/home/erik/Dropbox/Code/oco-web/img/education.png",
+		"/home/erik/cofinance-projects.html"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".csv",
+			"loan-",
+			"dmc-chart",
+			"country.html"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 32.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 97.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "poe_python.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Code/python/alien_invasion/oco-web.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 270.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
