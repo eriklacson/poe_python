@@ -303,6 +303,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/static/js/publish.js",
+			"settings":
+			{
+				"buffer_size": 1484,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 947,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/app.py",
+			"settings":
+			{
+				"buffer_size": 2070,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -360,10 +387,18 @@
 	},
 	"expanded_folders":
 	[
-		"/media/erik/Data/Dropbox/Code/multichain/poe_python"
+		"/media/erik/Data/Dropbox/Code/multichain/poe_python",
+		"/media/erik/Data/Dropbox/Code/multichain/poe_python/static",
+		"/media/erik/Data/Dropbox/Code/multichain/poe_python/static/js",
+		"/media/erik/Data/Dropbox/Code/multichain/poe_python/templates"
 	],
 	"file_history":
 	[
+		"/media/erik/Data/Dropbox/Code/multichain/poe_python/run.sh",
+		"/media/erik/Data/Dropbox/Code/multichain/poe_python/static/js/publish.js",
+		"/media/erik/Data/Dropbox/Code/multichain/poe_python/app.py",
+		"/media/erik/Data/Dropbox/Code/multichain/poe_python/poe_python.sublime-project",
+		"/media/erik/Data/Dropbox/Code/multichain/poe_python/static/js/.gitignore",
 		"/run/user/1000/gvfs/smb-share:server=192.168.0.116,share=share/motor_server/templates/index.html",
 		"/run/user/1000/gvfs/smb-share:server=192.168.0.116,share=share/motor_server/app.py",
 		"/home/erik/Desktop/test_file_reader/index.html",
@@ -483,8 +518,98 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/static/js/publish.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								702,
+								702
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								702,
+								702
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/app.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1446,
+								1446
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],

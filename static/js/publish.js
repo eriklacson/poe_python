@@ -15,7 +15,7 @@ var main = function() {
 			var hash = SHA256.hex(fileData)			
 			$('#hash-status').append("<p><b>File Hash: </b>" + hash + "/p");
 			$('#hash').val(hash);			
-			console.log('SHA256: ' + SHA256.hex(data));				
+			console.log('SHA256: ' + SHA256.hex(hash));				
 
 			}
 
@@ -41,12 +41,15 @@ var main = function() {
  		var hash = data[0].value;
 
  		//create json object for item data
- 		var jsonInfo = {item:{}};
+ 		var jsonInfo = {};
 
  		//extract form data and store in json
- 		jsonInfo.item.title = data[1].value;
- 		jsonInfo.item.owner = data[2].value;
- 		jsonInfo.item.description = data[3].value;
+ 		jsonInfo.title = data[1].value;
+ 		jsonInfo.owner = data[2].value;
+ 		jsonInfo.description = data[3].value;
+
+ 		// Open a new connection, using the GET request on the URL endpoint
+		request.open('POST', '/api/1.0/publish/' + hash, true);
 
  		//convert dict to json
   		var output =  JSON.stringify(jsonInfo);
@@ -62,11 +65,3 @@ var main = function() {
 
 
 $(document).ready(main);
-
-
-
-	// Open a new connection, using the GET request on the URL endpoint
-	request.open('GET', '/api/1.0/publish/' + key, true);
-
-	// Send post request
-	request.send(output);
