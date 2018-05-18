@@ -50,6 +50,7 @@ var main = function() {
 
  		// Open a new connection, using the GET request on the URL endpoint
 		request.open('POST', '/api/1.0/publish/' + hash, true);
+		request.setRequestHeader("Content-Type", "application/json")
 
  		//convert dict to json
   		var output =  JSON.stringify(jsonInfo);

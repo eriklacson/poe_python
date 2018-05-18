@@ -33,6 +33,9 @@ def asset(key):
 def publish(): 
     return render_template('publish.html')
 
+@app.route('/verify')
+def verify(): 
+    return render_template('verify.html')
 
 #get stream info
 @app.route('/api/1.0/info')
@@ -81,4 +84,3 @@ def publish_item(hash):
 
 if __name__ == '__main__':
     app.run(debug=True)
-
