@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block main_container %}
+
+<h2>Verify Item</h2>
+
+  <form>
+    <div class="form-group">
+      <label for="fileInput">File:</label>
+      <div class="message">Attach file for verification</div>
+      <input type="file" class="form-control" id="fileInput" name="fileInput">
+    </div>
+    <div id="hash-status"></div>        
+  </form>
+
+  <div id="result_display"></div>
+
+  <table id="items" class="table table-stripped">
+  </table>
+
+<script src="{{ url_for('static', filename='js/verify.js') }}"></script>
+<script src="{{ url_for('static', filename='js/hashes.js') }}"></script>
+{% endblock %}
+
