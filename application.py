@@ -14,42 +14,42 @@ rpcport = '9744'
 stream = "poe"
 chainname = 'chain1'
 
-app = Flask(__name__)
-bootstrap = Bootstrap(app)
+application = Flask(__name__)
+bootstrap = Bootstrap(application)
 
 #connect to multichain node
 chain_api = Savoir(rpcuser, rpcpasswd, rpchost, rpcport, chainname)
 
 #home page
-@app.route('/')
+@application.route('/')
 def index(): 
     return render_template('index.html')
 
-@app.route('/asset/<string:key>')
+@application.route('/asset/<string:key>')
 def asset(key): 
     return render_template('asset.html', key=key)
 
-@app.route('/publish')
+@application.route('/publish')
 def publish(): 
     return render_template('publish.html')
 
-@app.route('/verify')
+@application.route('/verify')
 def verify(): 
     return render_template('verify.html')
 
 #get stream info
-@app.route('/api/1.0/info')
+@application.route('/api/1.0/info')
 def get_info():
     chain_info = chain_api.getinfo()
     return jsonify({'chain_info': chain_info})
 
 #get stream item
-@app.route('/api/1.0/items')
+@application.route('/api/1.0/items')
 def get_items():
     chain_items = chain_api.liststreamitems(stream)
     return jsonify({'chain_items': chain_items})
 
-@app.route('/api/1.0/item/<string:key>')
+@application.route('/api/1.0/item/<string:key>')
 def get_key_item(key):
     key_item = chain_api.liststreamkeyitems(stream, key)
     item_json = binascii.unhexlify(key_item[0]['data'])
@@ -58,7 +58,7 @@ def get_key_item(key):
     return jsonify({'item': item})
 
 #publish hash to the stream
-@app.route('/api/1.0/publish/<string:hash>', methods=['POST'])
+@application.route('/api/1.0/publish/<string:hash>', methods=['POST'])
 def publish_item(hash):
     if not request.json:
         abort(400)
@@ -83,4 +83,4 @@ def publish_item(hash):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)
