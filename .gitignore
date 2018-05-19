@@ -3,3 +3,8 @@ poe_python.sublime-project
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+#virtual env directories
+bin/
+include/
+lib/
