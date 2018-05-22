@@ -329,18 +329,31 @@
 			}
 		},
 		{
-			"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/static/js/hashes.js",
-			"settings":
-			{
-				"buffer_size": 59645,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/templates/verify.html",
 			"settings":
 			{
 				"buffer_size": 621,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/.gitignore",
+			"settings":
+			{
+				"buffer_size": 178,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#!bin/python\nimport sys\nimport binascii\nimport json\nfrom flask_bootstrap import Bootstrap\nfrom Savoir import Savoir\nfrom flask import Flask, jsonify, abort, make_response, request, url_for, render_template\n\n#set multichain node account parameters\nrpcuser = 'multichainrpc'\nrpcpasswd = 'G5Z1x53jjUBDdpj8Xoe273Kc5mib72XGXMhhcHtjUSv1'\nrpchost = '54.163.128.66'\nrpcport = '9744'\nstream = \"poe\"\nchainname = 'chain1'\n\napplication = Flask(__name__)\nbootstrap = Bootstrap(          application)\n\n#connect to multichain node\nchain_api = Savoir(rpcuser, rpcpasswd, rpchost, rpcport, chainname)\n\n#home page\n@application.route('/')\ndef index(): \n    return render_template('index.html')\n\n@application.route('/asset/<string:key>')\ndef asset(key): \n    return render_template('asset.html', key=key)\n\n@application.route('/publish')\ndef publish(): \n    return render_template('publish.html')\n\n@application.route('/verify')\ndef verify(): \n    return render_template('verify.html')\n\n#get stream info\n@application.route('/api/1.0/info')\ndef get_info():\n    chain_info = chain_api.getinfo()\n    return jsonify({'chain_info': chain_info})\n\n#get stream item\n@application.route('/api/1.0/items')\ndef get_items():\n    chain_items = chain_api.liststreamitems(stream)\n    return jsonify({'chain_items': chain_items})\n\n@application.route('/api/1.0/item/<string:key>')\ndef get_key_item(key):\n    key_item = chain_api.liststreamkeyitems(stream, key)\n    item_json = binascii.unhexlify(key_item[0]['data'])\n    item = json.loads(item_json)\n    \n    return jsonify({'item': item})\n\n#publish hash to the stream\n@application.route('/api/1.0/publish/<string:hash>', methods=['POST'])\ndef publish_item(hash):\n    if not request.json:\n        abort(400)\n\n    #get item details    \n    item = {\n        'title': request.json['title'],\n        'description': request.json['description'],\n        'owner': request.json['owner']\n        }\n\n    #convert item dict to json    \n    json_item = json.dumps(item)\n\n    #convert json to hex\n    data_hex = binascii.hexlify(json_item)\n\n    #publish in data stream with hash as the key\n    verify = chain_api.publish('poe', hash, data_hex)\n    \n    return jsonify({'verify': verify})\n\n\nif __name__ == '__main__':\n    application.run(debug=True)\n",
+			"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/application.py",
+			"file_size": 2236,
+			"file_write_time": 131711881250079459,
+			"settings":
+			{
+				"buffer_size": 2246,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -536,7 +549,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -565,7 +578,7 @@
 						"translation.y": 198.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -593,41 +606,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/static/js/hashes.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 59645,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/templates/verify.html",
 					"semi_transient": false,
 					"settings":
@@ -651,6 +634,64 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								178,
+								178
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/media/erik/Data/Dropbox/Code/multichain/poe_python/application.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								474,
+								474
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 374.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
